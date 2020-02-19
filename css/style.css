@@ -1,0 +1,387 @@
+@import "reset.css";
+@import "../fonts/stylesheet.css";
+
+/****************HEADER********************/
+.circle{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgb(80, 148, 242);
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 64.35px;
+    font-family: "Source Sans Pro";
+    line-height: 1.2;
+    float: left;
+    margin-left: 30px;
+    margin-right: 15px;
+}
+.logo{
+    font-size: 42px;
+    font-family: "Segoe WP";
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+    text-align: left;
+    float: left;
+}
+.menu_links{
+    font-family: 'Segoe WP N';
+    font-size: 20px;
+    color: #6c6c6c;
+    margin-right: 35px;
+    text-decoration: none;
+    
+}
+.menu_links:hover{
+    color: #3a3939;
+}
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/**************** MAIN SCREEN *************/
+
+.main_screen{
+    background-image: url("../image/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 480px;
+    margin-top: 20px;
+    position: relative;
+}
+.main_screen img{
+    margin-top: 40px;
+    margin-left: 70px;
+}
+.text{
+    position: absolute;
+    right: 120px;
+    top: 150px;
+    font-family: 'Segoe WP';
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+}
+.text p{
+    width: 245px;
+    font-size: 27px;
+}
+.text button{
+    font-family: 'Segoe WP';
+    font-size: 23px;
+    background-color: #5094f2;
+    width: 172px;
+    height: 41px;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+}
+.fa-check-circle{
+    margin-right: 5px;
+}
+.text a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/**************** ABOUT *************/
+.about{
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+.card_circle{
+    border-radius: 50%;
+    width: 186px;
+    height: 186px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.card img{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+}
+.card h2{
+    font-family: 'Segoe WP N';
+    color: #5094f2;
+    font-size: 21px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card p{
+    font-family: 'Segoe WP N';
+    color: #909090;
+    font-size: 15px;
+    text-align: center;
+}
+.card{
+    width: 270px;
+    height: 280px;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.blue{
+    background-color: #5094f2;
+}
+.red{
+    background-color: #d94748;
+}
+.yellow{
+    background-color: #ebbb11;
+}
+.red img{
+    top: 55px;
+    right: 46px;
+}
+.yellow img{
+    top: 45px;
+    right: 40px;
+}
+
+/**************** CART ****************/
+.shoping_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.shoping_card h2{
+    font-family: 'Segoe WP N';
+    font-size: 43px;
+    color: #6f7173;
+}
+.shoping_card h3{
+    font-family: "Segoe WP N";
+    font-size: 27px;
+    color: #6f7173;
+    margin-bottom: 30px;
+}
+.shoping_card p{
+    font-family: 'Segoe WP N';
+    font-size: 16px;
+    color: #909090;
+    line-height: 35px;
+}
+.shoping_card img{
+    margin-top: 30px;
+}
+.card_text{
+    width: 470px;
+    height: 300px;
+    margin-top: 50px;
+}
+.devider{
+    border-top: 1px solid #e5e5e5;
+    margin-top: 55px;
+}
+.footer p{
+    font-family: "Segoe WP N";
+    font-size: 16px;
+    color: #6f7173;
+    margin: 45px auto 45px auto;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    #burger{
+        display: inline-block;
+    }
+     header{
+         height: 90px;
+         margin-top: 0px;
+         justify-content: space-between;
+    }
+    .navigation{
+        width: 80px;
+        z-index: 1;
+        position: absolute;
+        right: 3px;
+        top: 20px;
+    }
+    .menu_links{
+        display: none;
+        float: none;
+        background: transparent;
+        line-height: 35px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .burger_menu{
+        display: inline-block;
+    }
+    .main_screen{
+        margin-top: 0px;
+        height: 250px;
+    }
+    .main_screen img{
+        width: 177px;
+        height: 223px;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+    .text{
+        font-size: 30px;
+        right: 30px;
+        top: 20px;
+    }
+    .text p{
+        font-size: 23px;
+    }
+    .su_btn{
+        width: 235px;
+        height: 55px;
+    }
+    .card_circle{
+        border-radius: 50%;
+        width: 137px;
+        height: 136px;
+        float: left;
+    }
+    .card img {
+        top: 11px;
+        right: 30px;
+    }
+    .red img{
+        top: 25px;
+        right: 22px;
+    }
+    .yellow img{
+        top: 20px;
+        right: 20px;
+    }
+    .about{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .card h2{
+        font-size: 34px;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .card p{
+        font-size: 20px;
+        width: 100%;
+    }
+    .card{
+        height: 172px;
+        width: 100%;
+        padding-top: 23px;
+    }
+    .shoping_card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
+    }
+    .shoping_card img{
+        width: 215px;
+        height: 162px;
+    }
+    .card_image{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about .devider{
+        margin: 0;
+        border: 1px solid #cccccc;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .main_screen img {
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .text{
+        right: 40px;
+        font-size: 36px;
+    }
+    .card_text{
+        height: 340px;
+    }
+}
+@media (max-width: 575.98px) {
+    .text p{
+        width: 150px;
+        font-size: 16px;
+    }
+    .text{
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .main_screen img{
+        margin-left: 10px;
+    }
+    .card_text {
+        width: 95%;
+        height: 400px;
+        margin-top: 50px;
+    }
+}
+
+.burger_icon{
+    width: 40px;
+    background-color: #5094f2;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: -2px;
+    display: none;
+}
+.burger_icon div:nth-child(2){
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.line{
+    width: 40px;
+    height: 7px;
+    background-color: white;
+
+}
+.click div:first-child{
+    transition: 0.3s;
+    transform: translateY(12px) rotate(45deg);
+}
+.click div:nth-child(3){
+    transition: 0.3s;
+    transform: translateY(-12px) rotate(-45deg);
+
+}
+.click div:nth-child(2){
+    transition: 0.3s;
+    background-color: transparent;
+}
+.click2 div:first-child{
+    transition: 0.3s;
+}
+.click2 div:nth-child(3){
+    transition: 0.3s;
+
+}
+.click2 div:nth-child(2) {
+    transition: 0.3s;
+    background-color: white;
+}
+.vis{
+    display: block;
+    transition: 1s;
+    background: #5094f2;
+
+}
+
+
+
+
